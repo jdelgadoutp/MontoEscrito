@@ -1,5 +1,7 @@
 package MontoEscrito;
 
+import com.sun.istack.internal.NotNull;
+
 public class MontoEscrito {
 	
 	public String ValorLetras(String cadena) {
@@ -10,11 +12,9 @@ public class MontoEscrito {
 		String letras4="";
 		String digito1="";
 		String digito2="";
+		String valorletras="";
 		String complemento="Y";
 				
-					
-		if (cadena.length() > 4) System.out.println("No puede ser mayor a 4 digitos");
-		
 		if (cadena.substring(1,2).equals("0") & cadena.substring(2,3).equals("0")) complemento="";
 		
 		if (cadena.substring(2,3).equals("0")) complemento="";
@@ -270,13 +270,13 @@ public class MontoEscrito {
 			
 			
 			
-			System.out.println("Valor en letras es: " + letras1 + " " + letras2 + " " + letras3 + " " + complemento + " " + letras4);
-			
-
-
-
+		if (! letras1.isEmpty()) valorletras=letras1;
+		if (! letras2.isEmpty()) valorletras=valorletras + " " + letras2;
+		if (! letras3.isEmpty()) valorletras=valorletras + " " + letras3;
+		if (! letras4.isEmpty()) valorletras=valorletras + " " + complemento + "" + letras4;
 		
-		return "0";
+	
+		return valorletras;
 	}
 
 }
