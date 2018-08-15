@@ -15,9 +15,9 @@ public class MontoEscrito {
 		String valorletras="";
 		String complemento="Y";
 				
-		if (cadena.substring(1,2).equals("0") & cadena.substring(2,3).equals("0")) complemento="";
+		//if (cadena.substring(1,2).equals("0") & cadena.substring(2,3).equals("0")) complemento="";
 		
-		if (cadena.substring(2,3).equals("0")) complemento="";
+		//if (cadena.substring(2,3).equals("0")) complemento="";
 		
 		if (cadena.length() == 1) {
 			cadena="000" + cadena;
@@ -271,9 +271,9 @@ public class MontoEscrito {
 			
 			
 		if (! letras1.isEmpty()) valorletras=letras1;
-		if (! letras2.isEmpty()) valorletras=valorletras + " " + letras2;
-		if (! letras3.isEmpty()) valorletras=valorletras + " " + letras3;
-		if (! letras4.isEmpty()) valorletras=valorletras + " " + complemento + "" + letras4;
+		if (! letras2.isEmpty()) valorletras=letras1 + " " + letras2;
+		if (! letras3.isEmpty()) valorletras=letras1 + " " + letras2 + " "  + letras3;
+		if (! letras4.isEmpty()) valorletras=letras1 + " " + letras2 + " "  + letras3 + " " + complemento + " " + letras4;
 		
 	
 		return valorletras;
