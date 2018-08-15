@@ -15,9 +15,9 @@ public class MontoEscrito {
 		String valorletras="";
 		String complemento="Y";
 				
-		//if (cadena.substring(1,2).equals("0") & cadena.substring(2,3).equals("0")) complemento="";
+		if (cadena.substring(1,2).equals("0") & cadena.substring(2,3).equals("0")) complemento="";
 		
-		//if (cadena.substring(2,3).equals("0")) complemento="";
+		if (cadena.substring(2,3).equals("0")) complemento="";
 		
 		if (cadena.length() == 1) {
 			cadena="000" + cadena;
