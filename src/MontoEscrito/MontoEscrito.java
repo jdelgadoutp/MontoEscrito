@@ -14,6 +14,7 @@ public class MontoEscrito {
 		String digito2="";
 		String valorletras="";
 		String complemento="Y";
+		int impresion=4;
 				
 		if (cadena.substring(1,2).equals("0") & cadena.substring(2,3).equals("0")) complemento="";
 		
@@ -22,11 +23,18 @@ public class MontoEscrito {
 		if (cadena.length() == 1) {
 			cadena="000" + cadena;
 			complemento="";
+			impresion=1;
 		}
 		
-		if (cadena.length() == 2) cadena="00" + cadena;
+		if (cadena.length() == 2) {
+			cadena="00" + cadena;
+			impresion=2;
+		}
 		
-		if (cadena.length() == 3) cadena="0" + cadena;
+		if (cadena.length() == 3) {
+			cadena="0" + cadena;
+			impresion=3;
+		}
 		
 		digito1=cadena.substring(0, 1);
 				
@@ -269,11 +277,10 @@ public class MontoEscrito {
 		}
 			
 			
-			
-		if (! letras1.isEmpty()) valorletras=letras1;
-		if (! letras2.isEmpty()) valorletras=letras1 + " " + letras2;
-		if (! letras3.isEmpty()) valorletras=letras1 + " " + letras2 + " "  + letras3;
-		if (! letras4.isEmpty()) valorletras=letras1 + " " + letras2 + " "  + letras3 + " " + complemento + " " + letras4;
+		if (impresion == 1) valorletras=letras1;
+		if (impresion == 2) valorletras=letras3 + " " + complemento + " " + letras4;
+		if (impresion == 3) valorletras=letras2 + " " + letras3 + " "  + complemento + " " + letras4;
+		if (impresion == 4) valorletras=letras1 + " " + letras2 + " "  + letras3 + " " + complemento + " " + letras4;
 		
 	
 		return valorletras;
