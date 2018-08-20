@@ -135,7 +135,7 @@ public class MontoEscrito {
 		case "7":
 			if (cadena.substring(2, 3).equals("0") & cadena.substring(3, 4).equals("0")) {
 				valorletras = valorletras + "SETECIENTOS";
-				
+
 			} else
 				valorletras = valorletras + "SETECIENTOS ";
 
@@ -144,7 +144,7 @@ public class MontoEscrito {
 		case "8":
 			if (cadena.substring(2, 3).equals("0") & cadena.substring(3, 4).equals("0")) {
 				valorletras = valorletras + "OCHOCIENTOS";
-				
+
 			} else
 				valorletras = valorletras + "OCHOCIENTOS ";
 
@@ -197,43 +197,62 @@ public class MontoEscrito {
 			break;
 
 		case "2":
-			valorletras = valorletras + "VEINTE";
+			if (cadena.substring(3, 4).equals("0"))
+				valorletras = valorletras + "VEINTE";
+			else
+				valorletras = valorletras + "VEINTI ";
 
 			break;
 
 		case "3":
-			valorletras = valorletras + "TREINTA";
+			if (cadena.substring(3, 4).equals("0"))
+				valorletras = valorletras + "TREINTA";
+			else
+				valorletras = valorletras + "TREINTA Y ";
 
 			break;
 
 		case "4":
-			valorletras = valorletras + "CUARENTA";
-
+			if (cadena.substring(3, 4).equals("0"))
+				valorletras = valorletras + "CUARENTA";
+			else
+				valorletras = valorletras + "CUARENTA Y ";
 			break;
 
 		case "5":
-			valorletras = valorletras + "CINCUENTA";
-
+			if (cadena.substring(3, 4).equals("0"))
+				valorletras = valorletras + "CINCUENTA";
+			else
+				valorletras = valorletras + "CINCUENTA Y ";
 			break;
 
 		case "6":
-			valorletras = valorletras + "SESENTA";
+			if (cadena.substring(3, 4).equals("0"))
+				valorletras = valorletras + "SESENTA";
+			else
+				valorletras = valorletras + "SESENTA Y ";
 
 			break;
 
 		case "7":
-			valorletras = valorletras + "SETENTA";
-
+			if (cadena.substring(3, 4).equals("0"))
+				valorletras = valorletras + "SETENTA";
+			else
+				valorletras = valorletras + "SETENTA Y ";
 			break;
 
 		case "8":
-			valorletras = valorletras + "OCHENTA";
-
+			if (cadena.substring(3, 4).equals("0"))
+				valorletras = valorletras + "OCHENTA";
+			else
+				valorletras = valorletras + "OCHENTA Y ";
 			break;
 
 		case "9":
-			valorletras = valorletras + "NOVENTA";
-
+			if (cadena.substring(3, 4).equals("0"))
+				valorletras = valorletras + "NOVENTA";
+			else
+				valorletras = valorletras + "NOVENTA Y ";
 			break;
 
 		case "0":
@@ -311,7 +330,7 @@ public class MontoEscrito {
 			if (cadena.substring(2, 3).equals("0") & cadena.substring(3, 4).equals("0")) {
 				valorletras = valorletras + "";
 			}
-			
+
 			break;
 
 		default:
