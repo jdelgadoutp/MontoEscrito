@@ -14,9 +14,9 @@ class MontoEscritoTest {
 		// Paso 1, creo el objeto que voy a probar
 		MontoEscrito Letras = new MontoEscrito();
 		// Paso 2, declaro una variable con el resultado esperado
-		String letrasesperadas = "DOS MIL DOSCIENTOS DOCE";
+		String letrasesperadas = "MIL NOVENTA";
 		// Paso 3, llamo el metodo que necesito probar y obtengo el resultado
-		String letrasobtenidas = Letras.ValorLetras("2212");
+		String letrasobtenidas = Letras.ValorLetras("1090");
 		System.out.println(letrasobtenidas);
 		// Paso 4, comparar el resultado esperado contra el resultado obtenido
 		// Esto se hace con un metodo Assert de Junit
@@ -56,9 +56,9 @@ class MontoEscritoTest {
 		// Paso 1, creo el objeto que voy a probar
 		MontoEscrito Letras = new MontoEscrito();
 		// Paso 2, declaro una variable con el resultado esperado
-		String letrasesperadas = "CINCO";
+		String letrasesperadas = "UNO";
 		// Paso 3, llamo el metodo que necesito probar y obtengo el resultado
-		String letrasobtenidas = Letras.ValorLetras("5");
+		String letrasobtenidas = Letras.ValorLetras("1");
 		System.out.println(letrasobtenidas);
 		// Paso 4, comparar el resultado esperado contra el resultado obtenido
 		// Esto se hace con un metodo Assert de Junit

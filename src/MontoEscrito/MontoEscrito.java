@@ -79,7 +79,7 @@ public class MontoEscrito {
 		switch (cadena.substring(1, 2)) {
 
 		case "1":
-			if (cadena.substring(2, 3).equals("0") & cadena.substring(3, 4).equals("0")) {
+			if (cadena.substring(2, 3).equals("0") && cadena.substring(3, 4).equals("0")) {
 				valorletras = valorletras + "CIEN";
 
 			} else
@@ -88,7 +88,7 @@ public class MontoEscrito {
 			break;
 
 		case "2":
-			if (cadena.substring(2, 3).equals("0") & cadena.substring(3, 4).equals("0")) {
+			if (cadena.substring(2, 3).equals("0") && cadena.substring(3, 4).equals("0")) {
 				valorletras = valorletras + "DOSCIENTOS";
 
 			} else
@@ -97,7 +97,7 @@ public class MontoEscrito {
 			break;
 
 		case "3":
-			if (cadena.substring(2, 3).equals("0") & cadena.substring(3, 4).equals("0")) {
+			if (cadena.substring(2, 3).equals("0") && cadena.substring(3, 4).equals("0")) {
 				valorletras = valorletras + "TRESCIENTOS";
 
 			} else
@@ -106,7 +106,7 @@ public class MontoEscrito {
 			break;
 
 		case "4":
-			if (cadena.substring(2, 3).equals("0") & cadena.substring(3, 4).equals("0")) {
+			if (cadena.substring(2, 3).equals("0") && cadena.substring(3, 4).equals("0")) {
 				valorletras = valorletras + "CUATROCIENTOS";
 
 			} else
@@ -115,7 +115,7 @@ public class MontoEscrito {
 			break;
 
 		case "5":
-			if (cadena.substring(2, 3).equals("0") & cadena.substring(3, 4).equals("0")) {
+			if (cadena.substring(2, 3).equals("0") && cadena.substring(3, 4).equals("0")) {
 				valorletras = valorletras + "QUINIENTOS";
 
 			} else
@@ -124,7 +124,7 @@ public class MontoEscrito {
 			break;
 
 		case "6":
-			if (cadena.substring(2, 3).equals("0") & cadena.substring(3, 4).equals("0")) {
+			if (cadena.substring(2, 3).equals("0") && cadena.substring(3, 4).equals("0")) {
 				valorletras = valorletras + "SEISCIENTOS";
 
 			} else
@@ -133,7 +133,7 @@ public class MontoEscrito {
 			break;
 
 		case "7":
-			if (cadena.substring(2, 3).equals("0") & cadena.substring(3, 4).equals("0")) {
+			if (cadena.substring(2, 3).equals("0") && cadena.substring(3, 4).equals("0")) {
 				valorletras = valorletras + "SETECIENTOS";
 
 			} else
@@ -142,7 +142,7 @@ public class MontoEscrito {
 			break;
 
 		case "8":
-			if (cadena.substring(2, 3).equals("0") & cadena.substring(3, 4).equals("0")) {
+			if (cadena.substring(2, 3).equals("0") && cadena.substring(3, 4).equals("0")) {
 				valorletras = valorletras + "OCHOCIENTOS";
 
 			} else
@@ -151,7 +151,7 @@ public class MontoEscrito {
 			break;
 
 		case "9":
-			if (cadena.substring(2, 3).equals("0") & cadena.substring(3, 4).equals("0")) {
+			if (cadena.substring(2, 3).equals("0") && cadena.substring(3, 4).equals("0")) {
 				valorletras = valorletras + "NOVECIENTOS";
 			} else
 				valorletras = valorletras + "NOVECIENTOS ";
@@ -327,7 +327,7 @@ public class MontoEscrito {
 			break;
 
 		case "0":
-			if (cadena.substring(2, 3).equals("0") & cadena.substring(3, 4).equals("0")) {
+			if (cadena.substring(2, 3).equals("0") && cadena.substring(3, 4).equals("0")) {
 				valorletras = valorletras + "";
 			}
 
