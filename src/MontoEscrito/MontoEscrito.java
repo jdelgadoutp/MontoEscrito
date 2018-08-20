@@ -6,89 +6,69 @@ public class MontoEscrito {
 
 	public String ValorLetras(String cadena) {
 
-		String letras1 = "";
-		String letras2 = "";
-		String letras3 = "";
-		String letras4 = "";
-		String digito1 = "";
-		String digito2 = "";
 		String valorletras = "";
-		String complemento = "Y";
-		int impresion = 4;
-
-		if (cadena.substring(1, 2).equals("0") & cadena.substring(2, 3).equals("0"))
-			complemento = "";
-
-		if (cadena.substring(2, 3).equals("0"))
-			complemento = "";
 
 		if (cadena.length() == 1) {
 			cadena = "000" + cadena;
-			complemento = "";
-			impresion = 1;
 		}
 
 		if (cadena.length() == 2) {
 			cadena = "00" + cadena;
-			impresion = 2;
 		}
 
 		if (cadena.length() == 3) {
 			cadena = "0" + cadena;
-			impresion = 3;
 		}
 
-		digito1 = cadena.substring(0, 1);
-
-		switch (digito1) {
+		switch (cadena.substring(0, 1)) {
 
 		case "1":
-			letras1 = "MIL";
+			valorletras = "MIL ";
 
 			break;
 
 		case "2":
-			letras1 = "DOSMIL";
+			valorletras = "DOS MIL ";
 
 			break;
 
 		case "3":
-			letras1 = "TRESMIL";
+			valorletras = "TRES MIL ";
 
 			break;
 
 		case "4":
-			letras1 = "CUATRO";
+			valorletras = "CUATRO MIL ";
 
 			break;
 
 		case "5":
-			letras1 = "CINCOMIL";
+			valorletras = "CINCO MIL ";
 
 			break;
 
 		case "6":
-			letras1 = "SEISMIL";
+			valorletras = "SEIS MIL ";
 
 			break;
 
 		case "7":
-			letras1 = "SIETEMIL";
+			valorletras = "SIETE MIL ";
 
 			break;
 
 		case "8":
-			letras1 = "OCHOMIL";
+			valorletras = "OCHO MIL ";
 
 			break;
 
 		case "9":
-			letras1 = "NUEVEMIL";
+			valorletras = "NUEVE MIL ";
 
 			break;
 
 		case "0":
-			letras1 = "";
+			valorletras = "";
 
 			break;
 
@@ -96,93 +76,90 @@ public class MontoEscrito {
 			break;
 		}
 
-		digito1 = cadena.substring(1, 2);
-
-		switch (digito1) {
+		switch (cadena.substring(1, 2)) {
 
 		case "1":
 			if (cadena.substring(2, 3).equals("0") & cadena.substring(3, 4).equals("0")) {
-				letras2 = "CIEN";
-				complemento = "";
+				valorletras = valorletras + "CIEN";
+
 			} else
-				letras2 = "CIENTO";
+				valorletras = valorletras + "CIENTO ";
 
 			break;
 
 		case "2":
 			if (cadena.substring(2, 3).equals("0") & cadena.substring(3, 4).equals("0")) {
-				letras2 = "DOSIENTOS";
-				complemento = "";
+				valorletras = valorletras + "DOSCIENTOS";
+
 			} else
-				letras2 = "DOSIENTOS";
+				valorletras = valorletras + "DOSCIENTOS ";
 
 			break;
 
 		case "3":
 			if (cadena.substring(2, 3).equals("0") & cadena.substring(3, 4).equals("0")) {
-				letras2 = "TRECIENTOS";
-				complemento = "";
+				valorletras = valorletras + "TRESCIENTOS";
+
 			} else
-				letras2 = "TRECIENTOS";
+				valorletras = valorletras + "TRESCIENTOS ";
 
 			break;
 
 		case "4":
 			if (cadena.substring(2, 3).equals("0") & cadena.substring(3, 4).equals("0")) {
-				letras2 = "CUATROCIENTOS";
-				complemento = "";
+				valorletras = valorletras + "CUATROCIENTOS";
+
 			} else
-				letras2 = "CUATROCIENTOS";
+				valorletras = valorletras + "CUATROCIENTOS ";
 
 			break;
 
 		case "5":
 			if (cadena.substring(2, 3).equals("0") & cadena.substring(3, 4).equals("0")) {
-				letras2 = "QUINIENTOS";
-				complemento = "";
+				valorletras = valorletras + "QUINIENTOS";
+
 			} else
-				letras2 = "QUINIENTOS";
+				valorletras = valorletras + "QUINIENTOS ";
 
 			break;
 
 		case "6":
 			if (cadena.substring(2, 3).equals("0") & cadena.substring(3, 4).equals("0")) {
-				letras2 = "SEISCIENTOS";
-				complemento = "";
+				valorletras = valorletras + "SEISCIENTOS";
+
 			} else
-				letras2 = "SEISCIENTOS";
+				valorletras = valorletras + "SEISCIENTOS ";
 
 			break;
 
 		case "7":
 			if (cadena.substring(2, 3).equals("0") & cadena.substring(3, 4).equals("0")) {
-				letras2 = "SETECIENTOS";
-				complemento = "";
+				valorletras = valorletras + "SETECIENTOS";
+				
 			} else
-				letras2 = "SETECIENTOS";
+				valorletras = valorletras + "SETECIENTOS ";
 
 			break;
 
 		case "8":
 			if (cadena.substring(2, 3).equals("0") & cadena.substring(3, 4).equals("0")) {
-				letras2 = "OCHOCIENTOS";
-				complemento = "";
+				valorletras = valorletras + "OCHOCIENTOS";
+				
 			} else
-				letras2 = "OCHOCIENTOS";
+				valorletras = valorletras + "OCHOCIENTOS ";
 
 			break;
 
 		case "9":
 			if (cadena.substring(2, 3).equals("0") & cadena.substring(3, 4).equals("0")) {
-				letras2 = "NOVECIENTOS";
-				complemento = "";
+				valorletras = valorletras + "NOVECIENTOS";
 			} else
-				letras2 = "NOVECIENTOS";
+				valorletras = valorletras + "NOVECIENTOS ";
 
 			break;
 
 		case "0":
-			letras2 = "";
+			valorletras = valorletras + "";
 
 			break;
 
@@ -190,80 +167,77 @@ public class MontoEscrito {
 			break;
 		}
 
-		digito1 = cadena.substring(2, 3);
-		digito2 = cadena.substring(3, 4);
-
-		switch (digito1) {
+		switch (cadena.substring(2, 3)) {
 
 		case "1": {
 
-			if (digito2.equals("1"))
-				letras3 = "ONCE";
-			if (digito2.equals("2"))
-				letras3 = "DOCE";
-			if (digito2.equals("3"))
-				letras3 = "TRECE";
-			if (digito2.equals("4"))
-				letras3 = "CATORCE";
-			if (digito2.equals("5"))
-				letras3 = "QUINCE";
-			if (digito2.equals("6"))
-				letras3 = "DIEZ";
-			if (digito2.equals("7"))
-				letras3 = "DIEZ";
-			if (digito2.equals("8"))
-				letras3 = "DIEZ";
-			if (digito2.equals("9"))
-				letras3 = "DIEZ";
-			if (digito2.equals("0"))
-				letras3 = "DIEZ";
+			if (cadena.substring(3, 4).equals("1"))
+				valorletras = valorletras + "ONCE";
+			if (cadena.substring(3, 4).equals("2"))
+				valorletras = valorletras + "DOCE";
+			if (cadena.substring(3, 4).equals("3"))
+				valorletras = valorletras + "TRECE";
+			if (cadena.substring(3, 4).equals("4"))
+				valorletras = valorletras + "CATORCE";
+			if (cadena.substring(3, 4).equals("5"))
+				valorletras = valorletras + "QUINCE";
+			if (cadena.substring(3, 4).equals("6"))
+				valorletras = valorletras + "DIECI ";
+			if (cadena.substring(3, 4).equals("7"))
+				valorletras = valorletras + "DIECI ";
+			if (cadena.substring(3, 4).equals("8"))
+				valorletras = valorletras + "DIECI ";
+			if (cadena.substring(3, 4).equals("9"))
+				valorletras = valorletras + "DIECI ";
+			if (cadena.substring(3, 4).equals("0"))
+				valorletras = valorletras + "DIEZ";
 
 		}
 
 			break;
 
 		case "2":
-			letras3 = "VEINTE";
+			valorletras = valorletras + "VEINTE";
 
 			break;
 
 		case "3":
-			letras3 = "TREINTA";
+			valorletras = valorletras + "TREINTA";
 
 			break;
 
 		case "4":
-			letras3 = "CUARENTA";
+			valorletras = valorletras + "CUARENTA";
 
 			break;
 
 		case "5":
-			letras3 = "CINCUENTA";
+			valorletras = valorletras + "CINCUENTA";
 
 			break;
 
 		case "6":
-			letras3 = "SESENTA";
+			valorletras = valorletras + "SESENTA";
 
 			break;
 
 		case "7":
-			letras3 = "SETENTA";
+			valorletras = valorletras + "SETENTA";
 
 			break;
 
 		case "8":
-			letras3 = "OCHENTA";
+			valorletras = valorletras + "OCHENTA";
 
 			break;
 
 		case "9":
-			letras3 = "NOVENTA";
+			valorletras = valorletras + "NOVENTA";
 
 			break;
 
 		case "0":
-			letras3 = "";
+			valorletras = valorletras + "";
 
 			break;
 
@@ -271,90 +245,78 @@ public class MontoEscrito {
 			break;
 		}
 
-		switch (digito2) {
+		switch (cadena.substring(3, 4)) {
 
 		case "1":
-			if (digito1.equals("1"))
-				letras4 = "";
+			if (cadena.substring(2, 3).equals("1"))
+				valorletras = valorletras + "";
 			else
-				letras4 = "UNO";
+				valorletras = valorletras + "UNO";
 
 			break;
 
 		case "2":
-			if (digito1.equals("1"))
-				letras4 = "";
+			if (cadena.substring(2, 3).equals("1"))
+				valorletras = valorletras + "";
 			else
-				letras4 = "DOS";
+				valorletras = valorletras + "DOS";
 
 			break;
 
 		case "3":
-			if (digito1.equals("1"))
-				letras4 = "";
+			if (cadena.substring(2, 3).equals("1"))
+				valorletras = valorletras + "";
 			else
-				letras4 = "TRES";
+				valorletras = valorletras + "TRES";
 
 			break;
 
 		case "4":
-			if (digito1.equals("1"))
-				letras4 = "";
+			if (cadena.substring(2, 3).equals("1"))
+				valorletras = valorletras + "";
 			else
-				letras4 = "CUATRO";
+				valorletras = valorletras + "CUATRO";
 
 			break;
 
 		case "5":
-			if (digito1.equals("1"))
-				letras4 = "";
+			if (cadena.substring(2, 3).equals("1"))
+				valorletras = valorletras + "";
 			else
-				letras4 = "CINCO";
+				valorletras = valorletras + "CINCO";
 
 			break;
 
 		case "6":
-			letras4 = "SEIS";
+			valorletras = valorletras + "SEIS";
 
 			break;
 
 		case "7":
-			letras4 = "SIETE";
+			valorletras = valorletras + "SIETE";
 
 			break;
 
 		case "8":
-			letras4 = "OCHO";
+			valorletras = valorletras + "OCHO";
 
 			break;
 
 		case "9":
-			letras4 = "NUEVE";
+			valorletras = valorletras + "NUEVE";
 
 			break;
 
 		case "0":
 			if (cadena.substring(2, 3).equals("0") & cadena.substring(3, 4).equals("0")) {
-				letras4 = "";
-				complemento = "";
-
-			} else
-				complemento = "";
-
+				valorletras = valorletras + "";
+			}
+			
 			break;
 
 		default:
 			break;
 		}
-
-		if (impresion == 1)
-			valorletras = letras1;
-		if (impresion == 2)
-			valorletras = letras3 + " " + complemento + " " + letras4;
-		if (impresion == 3)
-			valorletras = letras2 + " " + letras3 + " " + complemento + " " + letras4;
-		if (impresion == 4)
-			valorletras = letras1 + " " + letras2 + " " + letras3 + " " + complemento + " " + letras4;
 
 		return valorletras;
 	}
