@@ -17,7 +17,7 @@ class MontoEscritoTest {
 		String letrasesperadas = "MIL NOVENTA";
 		// Paso 3, llamo el metodo que necesito probar y obtengo el resultado
 		String letrasobtenidas = Letras.ValorLetras("1090");
-		System.out.println(letrasobtenidas);
+		System.out.println("Su numero de cuatro digitos es: " + letrasobtenidas);
 		// Paso 4, comparar el resultado esperado contra el resultado obtenido
 		// Esto se hace con un metodo Assert de Junit
 		assertEquals(letrasesperadas, letrasobtenidas);
@@ -31,7 +31,7 @@ class MontoEscritoTest {
 		String letrasesperadas = "DOSCIENTOS CINCUENTA Y CINCO";
 		// Paso 3, llamo el metodo que necesito probar y obtengo el resultado
 		String letrasobtenidas = Letras.ValorLetras("255");
-		System.out.println(letrasobtenidas);
+		System.out.println("Su numero de tres digitos es: " + letrasobtenidas);
 		// Paso 4, comparar el resultado esperado contra el resultado obtenido
 		// Esto se hace con un metodo Assert de Junit
 		assertEquals(letrasesperadas, letrasobtenidas);
@@ -45,7 +45,7 @@ class MontoEscritoTest {
 		String letrasesperadas = "CINCUENTA Y CINCO";
 		// Paso 3, llamo el metodo que necesito probar y obtengo el resultado
 		String letrasobtenidas = Letras.ValorLetras("55");
-		System.out.println(letrasobtenidas);
+		System.out.println("Su numero de dos digitos es: " + letrasobtenidas);
 		// Paso 4, comparar el resultado esperado contra el resultado obtenido
 		// Esto se hace con un metodo Assert de Junit
 		assertEquals(letrasesperadas, letrasobtenidas);
@@ -59,7 +59,7 @@ class MontoEscritoTest {
 		String letrasesperadas = "UNO";
 		// Paso 3, llamo el metodo que necesito probar y obtengo el resultado
 		String letrasobtenidas = Letras.ValorLetras("1");
-		System.out.println(letrasobtenidas);
+		System.out.println("Su numero un digito es: " + letrasobtenidas);
 		// Paso 4, comparar el resultado esperado contra el resultado obtenido
 		// Esto se hace con un metodo Assert de Junit
 		assertEquals(letrasesperadas, letrasobtenidas);
