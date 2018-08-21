@@ -192,13 +192,13 @@ public class MontoEscrito {
 			if (cadena.substring(3, 4).equals("5"))
 				valorletras = valorletras + "QUINCE";
 			if (cadena.substring(3, 4).equals("6"))
-				valorletras = valorletras + "DIECI ";
+				valorletras = valorletras + "DIECI";
 			if (cadena.substring(3, 4).equals("7"))
-				valorletras = valorletras + "DIECI ";
+				valorletras = valorletras + "DIECI";
 			if (cadena.substring(3, 4).equals("8"))
-				valorletras = valorletras + "DIECI ";
+				valorletras = valorletras + "DIECI";
 			if (cadena.substring(3, 4).equals("9"))
-				valorletras = valorletras + "DIECI ";
+				valorletras = valorletras + "DIECI";
 			if (cadena.substring(3, 4).equals("0"))
 				valorletras = valorletras + "DIEZ";
 

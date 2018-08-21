@@ -28,9 +28,9 @@ class MontoEscritoTest {
 		// Paso 1, creo el objeto que voy a probar
 		MontoEscrito Letras = new MontoEscrito();
 		// Paso 2, declaro una variable con el resultado esperado
-		String letrasesperadas = "DOSCIENTOS CINCUENTA Y CINCO";
+		String letrasesperadas = "DOSCIENTOS DIECISEIS";
 		// Paso 3, llamo el metodo que necesito probar y obtengo el resultado
-		String letrasobtenidas = Letras.ValorLetras("255");
+		String letrasobtenidas = Letras.ValorLetras("216");
 		System.out.println("Su numero de tres digitos es: " + letrasobtenidas);
 		// Paso 4, comparar el resultado esperado contra el resultado obtenido
 		// Esto se hace con un metodo Assert de Junit
