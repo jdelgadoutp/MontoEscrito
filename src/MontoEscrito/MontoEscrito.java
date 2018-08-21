@@ -309,43 +309,32 @@ public class MontoEscrito {
 		switch (cadena.substring(3, 4)) {
 
 		case "1":
-			if (cadena.substring(2, 3).equals("1"))
-				valorletras = valorletras + "";
-			else
+			if (!cadena.substring(2, 3).equals("1"))
 				valorletras = valorletras + "UNO";
 
 			break;
 
 		case "2":
-			if (cadena.substring(2, 3).equals("1"))
-				valorletras = valorletras + "";
-			else
+			if (!cadena.substring(2, 3).equals("1"))
 				valorletras = valorletras + "DOS";
 
 			break;
 
 		case "3":
-			if (cadena.substring(2, 3).equals("1"))
-				valorletras = valorletras + "";
-			else
+			if (!cadena.substring(2, 3).equals("1"))
 				valorletras = valorletras + "TRES";
 
 			break;
 
 		case "4":
-			if (cadena.substring(2, 3).equals("1"))
-				valorletras = valorletras + "";
-			else
+			if (!cadena.substring(2, 3).equals("1"))
 				valorletras = valorletras + "CUATRO";
 
 			break;
 
 		case "5":
-			if (cadena.substring(2, 3).equals("1"))
-				valorletras = valorletras + "";
-			else
+			if (!cadena.substring(2, 3).equals("1"))
 				valorletras = valorletras + "CINCO";
-
 			break;
 
 		case "6":
