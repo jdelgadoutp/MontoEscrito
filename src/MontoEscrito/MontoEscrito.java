@@ -7,6 +7,8 @@ public class MontoEscrito {
 	public String ValorLetras(String cadena) {
 
 		String valorletras = "";
+		
+		// Verifico el tamaño de la cadena para rellenar con ceros los las posiciones faltantes
 
 		if (cadena.length() == 1) {
 			cadena = "000" + cadena;
@@ -20,6 +22,8 @@ public class MontoEscrito {
 			cadena = "0" + cadena;
 		}
 
+		// Caso para obtener el valor de las unidades de mil.
+		
 		switch (cadena.substring(0, 1)) {
 
 		case "1":
@@ -76,6 +80,8 @@ public class MontoEscrito {
 			break;
 		}
 
+		// Caso para obtener el valor de las unidades de cien.
+		
 		switch (cadena.substring(1, 2)) {
 
 		case "1":
@@ -166,11 +172,15 @@ public class MontoEscrito {
 		default:
 			break;
 		}
+		
+		// Caso para obtener el valor de las unidades de diez.
 
 		switch (cadena.substring(2, 3)) {
 
 		case "1": {
-
+			
+			// Validación numeros del 10 al 19
+			
 			if (cadena.substring(3, 4).equals("1"))
 				valorletras = valorletras + "ONCE";
 			if (cadena.substring(3, 4).equals("2"))
@@ -264,6 +274,8 @@ public class MontoEscrito {
 			break;
 		}
 
+		// Caso para obtener el valor de las unidades.
+		
 		switch (cadena.substring(3, 4)) {
 
 		case "1":
