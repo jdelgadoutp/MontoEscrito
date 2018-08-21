@@ -14,14 +14,13 @@ class MontoEscritoTest {
 		// Paso 1, creo el objeto que voy a probar
 		MontoEscrito Letras = new MontoEscrito();
 		// Paso 2, declaro una variable con el resultado esperado
-		String letrasesperadas = "MIL NOVENTA";
-		letrasesperadas=letrasesperadas.toUpperCase();
+		String letrasesperadas = "nueve mil ciento uno";
 		// Paso 3, llamo el metodo que necesito probar y obtengo el resultado
-		String letrasobtenidas = Letras.ValorLetras("1090");
+		String letrasobtenidas = Letras.ValorLetras("9101");
 		System.out.println("Su numero de cuatro digitos es: " + letrasobtenidas);
 		// Paso 4, comparar el resultado esperado contra el resultado obtenido
 		// Esto se hace con un metodo Assert de Junit
-		assertEquals(letrasesperadas, letrasobtenidas);
+		assertEquals(letrasesperadas.toUpperCase(), letrasobtenidas);
 	}
 
 	@Test
@@ -30,13 +29,12 @@ class MontoEscritoTest {
 		MontoEscrito Letras = new MontoEscrito();
 		// Paso 2, declaro una variable con el resultado esperado
 		String letrasesperadas = "DOSCIENTOS quince";
-		letrasesperadas=letrasesperadas.toUpperCase();
 		// Paso 3, llamo el metodo que necesito probar y obtengo el resultado
 		String letrasobtenidas = Letras.ValorLetras("215");
 		System.out.println("Su numero de tres digitos es: " + letrasobtenidas);
 		// Paso 4, comparar el resultado esperado contra el resultado obtenido
 		// Esto se hace con un metodo Assert de Junit
-		assertEquals(letrasesperadas, letrasobtenidas);
+		assertEquals(letrasesperadas.toUpperCase(), letrasobtenidas);
 	}
 
 	@Test
@@ -45,13 +43,12 @@ class MontoEscritoTest {
 		MontoEscrito Letras = new MontoEscrito();
 		// Paso 2, declaro una variable con el resultado esperado
 		String letrasesperadas = "CINCUENTA Y CINCO";
-		letrasesperadas=letrasesperadas.toUpperCase();
 		// Paso 3, llamo el metodo que necesito probar y obtengo el resultado
 		String letrasobtenidas = Letras.ValorLetras("55");
 		System.out.println("Su numero de dos digitos es: " + letrasobtenidas);
 		// Paso 4, comparar el resultado esperado contra el resultado obtenido
 		// Esto se hace con un metodo Assert de Junit
-		assertEquals(letrasesperadas, letrasobtenidas);
+		assertEquals(letrasesperadas.toUpperCase(), letrasobtenidas);
 	}
 
 	@Test
@@ -60,13 +57,12 @@ class MontoEscritoTest {
 		MontoEscrito Letras = new MontoEscrito();
 		// Paso 2, declaro una variable con el resultado esperado
 		String letrasesperadas = "UNO";
-		letrasesperadas=letrasesperadas.toUpperCase();
 		// Paso 3, llamo el metodo que necesito probar y obtengo el resultado
 		String letrasobtenidas = Letras.ValorLetras("1");
 		System.out.println("Su numero un digito es: " + letrasobtenidas);
 		// Paso 4, comparar el resultado esperado contra el resultado obtenido
 		// Esto se hace con un metodo Assert de Junit
-		assertEquals(letrasesperadas, letrasobtenidas);
+		assertEquals(letrasesperadas.toUpperCase(), letrasobtenidas);
 	}
 
 }

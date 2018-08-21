@@ -7,8 +7,9 @@ public class MontoEscrito {
 	public String ValorLetras(String cadena) {
 
 		String valorletras = "";
-				
-		// Verifico el tamaño de la cadena para rellenar con ceros los las posiciones faltantes
+
+		// Verifico el tamaño de la cadena para rellenar con ceros los las posiciones
+		// faltantes
 
 		if (cadena.length() == 1) {
 			cadena = "000" + cadena;
@@ -23,52 +24,81 @@ public class MontoEscrito {
 		}
 
 		// Caso para obtener el valor de las unidades de mil.
-		
+
 		switch (cadena.substring(0, 1)) {
 
 		case "1":
-			valorletras = "MIL ";
+			if (cadena.subSequence(1, 2).equals("0") && cadena.subSequence(2, 3).equals("0")
+					&& cadena.subSequence(3, 4).equals("0"))
+				valorletras = "MIL";
+			else
+				valorletras = "MIL ";
 
 			break;
 
 		case "2":
-			valorletras = "DOS MIL ";
-
+			if (cadena.subSequence(1, 2).equals("0") && cadena.subSequence(2, 3).equals("0")
+					&& cadena.subSequence(3, 4).equals("0"))
+				valorletras = "DOS MIL";
+			else
+				valorletras = "DOS MIL ";
 			break;
 
 		case "3":
-			valorletras = "TRES MIL ";
-
+			if (cadena.subSequence(1, 2).equals("0") && cadena.subSequence(2, 3).equals("0")
+					&& cadena.subSequence(3, 4).equals("0"))
+				valorletras = "TRES MIL";
+			else
+				valorletras = "TRES MIL ";
 			break;
 
 		case "4":
-			valorletras = "CUATRO MIL ";
-
+			if (cadena.subSequence(1, 2).equals("0") && cadena.subSequence(2, 3).equals("0")
+					&& cadena.subSequence(3, 4).equals("0"))
+				valorletras = "CUATRO MIL";
+			else
+				valorletras = "CUATRO MIL ";
 			break;
 
 		case "5":
-			valorletras = "CINCO MIL ";
+			if (cadena.subSequence(1, 2).equals("0") && cadena.subSequence(2, 3).equals("0")
+					&& cadena.subSequence(3, 4).equals("0"))
+				valorletras = "CINCO MIL";
+			else
+				valorletras = "CINCO MIL ";
 
 			break;
 
 		case "6":
-			valorletras = "SEIS MIL ";
-
+			if (cadena.subSequence(1, 2).equals("0") && cadena.subSequence(2, 3).equals("0")
+					&& cadena.subSequence(3, 4).equals("0"))
+				valorletras = "SEIS MIL";
+			else
+				valorletras = "SEIS MIL ";
 			break;
 
 		case "7":
-			valorletras = "SIETE MIL ";
-
+			if (cadena.subSequence(1, 2).equals("0") && cadena.subSequence(2, 3).equals("0")
+					&& cadena.subSequence(3, 4).equals("0"))
+				valorletras = "SIETE MIL";
+			else
+				valorletras = "SIETE MIL ";
 			break;
 
 		case "8":
-			valorletras = "OCHO MIL ";
-
+			if (cadena.subSequence(1, 2).equals("0") && cadena.subSequence(2, 3).equals("0")
+					&& cadena.subSequence(3, 4).equals("0"))
+				valorletras = "OCHO MIL";
+			else
+				valorletras = "OCHO MIL ";
 			break;
 
 		case "9":
-			valorletras = "NUEVE MIL ";
-
+			if (cadena.subSequence(1, 2).equals("0") && cadena.subSequence(2, 3).equals("0")
+					&& cadena.subSequence(3, 4).equals("0"))
+				valorletras = "NUEVE MIL";
+			else
+				valorletras = "NUEVE MIL ";
 			break;
 
 		case "0":
@@ -81,7 +111,7 @@ public class MontoEscrito {
 		}
 
 		// Caso para obtener el valor de las unidades de cien.
-		
+
 		switch (cadena.substring(1, 2)) {
 
 		case "1":
@@ -172,15 +202,15 @@ public class MontoEscrito {
 		default:
 			break;
 		}
-		
+
 		// Caso para obtener el valor de las unidades de diez.
 
 		switch (cadena.substring(2, 3)) {
 
 		case "1": {
-			
+
 			// Validación numeros del 10 al 19
-			
+
 			if (cadena.substring(3, 4).equals("1"))
 				valorletras = valorletras + "ONCE";
 			if (cadena.substring(3, 4).equals("2"))
@@ -275,7 +305,7 @@ public class MontoEscrito {
 		}
 
 		// Caso para obtener el valor de las unidades.
-		
+
 		switch (cadena.substring(3, 4)) {
 
 		case "1":
@@ -349,7 +379,7 @@ public class MontoEscrito {
 			break;
 		}
 
-		return valorletras;
+		return valorletras.toUpperCase();
 	}
 
 }
