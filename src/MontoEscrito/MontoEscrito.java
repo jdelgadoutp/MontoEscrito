@@ -7,7 +7,7 @@ public class MontoEscrito {
 	public String ValorLetras(String cadena) {
 
 		String valorletras = "";
-		
+				
 		// Verifico el tamaño de la cadena para rellenar con ceros los las posiciones faltantes
 
 		if (cadena.length() == 1) {

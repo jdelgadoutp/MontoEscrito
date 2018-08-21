@@ -15,6 +15,7 @@ class MontoEscritoTest {
 		MontoEscrito Letras = new MontoEscrito();
 		// Paso 2, declaro una variable con el resultado esperado
 		String letrasesperadas = "MIL NOVENTA";
+		letrasesperadas=letrasesperadas.toUpperCase();
 		// Paso 3, llamo el metodo que necesito probar y obtengo el resultado
 		String letrasobtenidas = Letras.ValorLetras("1090");
 		System.out.println("Su numero de cuatro digitos es: " + letrasobtenidas);
@@ -29,6 +30,7 @@ class MontoEscritoTest {
 		MontoEscrito Letras = new MontoEscrito();
 		// Paso 2, declaro una variable con el resultado esperado
 		String letrasesperadas = "DOSCIENTOS DIECISEIS";
+		letrasesperadas=letrasesperadas.toUpperCase();
 		// Paso 3, llamo el metodo que necesito probar y obtengo el resultado
 		String letrasobtenidas = Letras.ValorLetras("216");
 		System.out.println("Su numero de tres digitos es: " + letrasobtenidas);
@@ -43,6 +45,7 @@ class MontoEscritoTest {
 		MontoEscrito Letras = new MontoEscrito();
 		// Paso 2, declaro una variable con el resultado esperado
 		String letrasesperadas = "CINCUENTA Y CINCO";
+		letrasesperadas=letrasesperadas.toUpperCase();
 		// Paso 3, llamo el metodo que necesito probar y obtengo el resultado
 		String letrasobtenidas = Letras.ValorLetras("55");
 		System.out.println("Su numero de dos digitos es: " + letrasobtenidas);
@@ -57,6 +60,7 @@ class MontoEscritoTest {
 		MontoEscrito Letras = new MontoEscrito();
 		// Paso 2, declaro una variable con el resultado esperado
 		String letrasesperadas = "UNO";
+		letrasesperadas=letrasesperadas.toUpperCase();
 		// Paso 3, llamo el metodo que necesito probar y obtengo el resultado
 		String letrasobtenidas = Letras.ValorLetras("1");
 		System.out.println("Su numero un digito es: " + letrasobtenidas);
